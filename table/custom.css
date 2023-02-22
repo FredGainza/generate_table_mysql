@@ -160,6 +160,14 @@ table td {
     background-color: rgb(230, 193, 124) !important;
 }
 
+tr.bg-admin > td,  tr.bg-admin > td *{
+    cursor: not-allowed !important;
+}
+/* 
+tr.bg-admin > td,  tr.bg-admin > td > label, tr.bg-admin > td > label > input, tr.bg-admin > td > label > span{
+    cursor: not-allowed !important;
+} */
+
 .table-select {
     font-size: 90%;
     padding: 4px;
@@ -215,8 +223,12 @@ table.table-generated > tbody > tr:last-child {
     border-bottom: 1px solid #9c9c9c;
 }
 
-.bg-disabled-check {
+
+
+.bg-disabled-check,
+.bg-disabled-check .custom-checkbox {
     background-color: #dfdfdf;
+    cursor: not-allowed !important;
 }
 
 
