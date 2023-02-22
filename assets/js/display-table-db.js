@@ -687,7 +687,7 @@ $(document).ready(function() {
     }
 
     function testNoScroll(id) {
-        let widthDocument = $(window).width();
+        let widthDocument = 0.95 * $(window).width();
         let widthHeader = $('#'+id).width();
         if (widthDocument > widthHeader)
             return true;

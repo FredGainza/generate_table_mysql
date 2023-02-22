@@ -711,13 +711,19 @@ button, input, optgroup, select, textarea {
 }
 
 @media (min-width: 990px) {
-    html, body {
+    /* html, body {
         font-size: 100%;
-    }
+    } */
     .table-input {
         width: 350px;
     }
     .w-container-main-resp {
         width: 90%;
+    }
+}
+
+@media (min-width: 1400px) {
+    html, body {
+        font-size: 100%;
     }
 }
