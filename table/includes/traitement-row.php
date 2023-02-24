@@ -2,6 +2,7 @@
 session_start();
 
 require '../../app/db.inc.php';
+require '../../app/toolbox.php';
 require '../includes/functions.php';
 
 $array_types = [
@@ -151,7 +152,8 @@ function traitementType(
                 break;
             }
         }
-        $a["type"] = in_array(strtoupper($type), array_keys($replaceType)) ? $replaceType[strtoupper($type)] : strtoupper($type);
+        $type_temp = in_array(strtoupper($type), array_keys($replaceType)) ? $replaceType[strtoupper($type)] : strtoupper($type);
+        $a["type"] = strpos($type_temp, " ") ? explode(" ", $type_temp)[0] : $type_temp;
         $a["complement"] = [];
         $a["test"] = [];
     }
