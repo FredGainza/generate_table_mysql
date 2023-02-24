@@ -210,7 +210,7 @@ function tableDatabase(
     $init_html .= "<div id=\"notifEditRow\" class=\"modal fade\">";
     $init_html .= "<div class=\"modal-dialog\">";
     $init_html .= "<div class=\"modal-content bb-shadow bg-success-light\">";
-    $init_html .= "<div class=\"py-1 border-bottom-notif\">";
+    $init_html .= "<div class=\"py-1 border-bottom-notif\"  style=\"background-color: #b3b3b3;\">";
     $init_html .= "<button type=\"button\" class=\"close ml-auto mr-2 mb-1\" data-dismiss=\"modal\" aria-label=\"Close\">";
     $init_html .= "<span aria-hidden=\"true\">&times;</span>";
     $init_html .= "</button>";
